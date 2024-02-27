@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #titre {
+        text-align: center;
+        font-size: 1000%;
+        color: white;
+        text-shadow: 4px 10px 100px blue;
+        margin: 0px;
+        margin-top: 100px;
+      }
+      body {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .outside {
+        height: 400px;
+        z-index: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around; /* Adjusted to space-around */
+        background-color: rgba(0, 128, 0, 0);
+        margin-top: 10%;
+      }
+      .outside2 {
+        height: 400px;
+        z-index: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around; /* Adjusted to space-around */
+        background-color: rgba(0, 128, 0, 0);
+        margin-top: 5%;
+      }
+
+      .inside {
+        background-color: rgba(0, 255, 251, 0.135);
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: smaller;
+        width: 20%; /* Adjusted width */
+        padding-bottom: 2px;
+        overflow: hidden; /* Ensure content doesn't overflow when expanding */
+        height: 300px; /* Set initial height to 400px */
+        transition: height 1s; /* Changed transition property to height */
+        border-color: rgb(0, 0, 0);
+        box-shadow: 4px 10px 100px blue;
+        border-width: thin;
+        margin-left: 5px;
+        margin-right: 5px;
+        z-index: 1;
+      }
+
+      .title {
+        padding: 5px;
+        margin-bottom: 0px;
+      }
+      p {
+        margin-top: 0px;
+        transition: font-size 1s;
+      }
+
+      .inside:hover {
+        height: 400px; /* Changed height value */
+      }
+      .inside:hover p {
+        font-size: large;
+      }
+      h1 {
+        font-size: xx-large;
+        transition: font-size 1s;
+      }
+      .inside:hover h1 {
+        font-size: x-large;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titre">Bibliographie</h1>
+    <div class="outside">
+      <div class="inside">
+        <h1 class="title">Sombardier, Alexendre</h1>
+        <p>
+          Pourquoi l'Empire romain ne s'est-il jamais installé durablement
+          (pendant des siècles) en "Germanie" et étendu ses frontières dans
+          cette région, contrairement à la "Gaule"?
+        </p>
+        <p>Consulté le <b>27.02.2024</b></p>
+        <p>
+          URL :
+          <a href="https://images.app.goo.gl/eQVT6Sjat3L1g2kVA"
+            >https://images.app.goo.gl/eQVT6Sjat3L1g2kVA</a
+          >
+        </p>
+        <
+      </div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+    </div>
+    <div class="outside2">
+      <div class="inside"></div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+      <div class="inside">
+        <h1></h1>
+      </div>
+    </div>
+  </body>
+</html>
